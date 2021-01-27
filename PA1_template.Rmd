@@ -60,7 +60,7 @@ total_steps_each_day[c(1:5),]
 
 We create a histogram with ggplot2.
 
-```{r}
+```{r histogram_steps_each_day, echo=TRUE}
 
 total_steps_each_day %>%
   ggplot(aes(x = date, y = daily_steps_sum)) + 
@@ -91,7 +91,7 @@ A time series plot of the 5-minute interval (x-axis) and the average number of s
 
 First a new data frame is created, which contains the average steps for each interval. Then plot the average number of steps for each time interval.
 
-```{r, echo=TRUE}
+```{r plot_average_steps_interval, echo=TRUE}
 
 average_steps_each_interval <- act_data %>%
   group_by(interval) %>%
@@ -156,7 +156,7 @@ act_data_filled[c(1:5),]
 
 A histogram of the total number of steps taken each day is created.
 
-```{r, echo = TRUE}
+```{r histogram_number_steps_gathered_missing_value, echo = TRUE}
 
 steps_each_day_filled <- act_data_filled %>% 
   select(steps_filled, date) %>% 
@@ -207,7 +207,7 @@ act_data_weekendday[c(1:5),]
 
 ### 2. Creating a panel plot for weekdays and weekends
 
-```{r, echo=TRUE}
+```{r plot_weekend_weekday, echo=TRUE}
 
 par(mfrow = c(1,2))
 

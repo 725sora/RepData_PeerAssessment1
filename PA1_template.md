@@ -116,7 +116,7 @@ total_steps_each_day %>%
   labs(title = "Total number of steps taken each day", y = "daily steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](PA1_template_files/figure-html/histogram_steps_each_day-1.png)<!-- -->
 
 ### 3. Mean and median of the total number of steps taken each day
 
@@ -155,7 +155,7 @@ average_steps_each_interval %>%
   plot(type = "l", main = "Average Steps for Each Interval", ylab = "average number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](PA1_template_files/figure-html/plot_average_steps_interval-1.png)<!-- -->
 
 ### 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -248,7 +248,7 @@ steps_each_day_filled %>%
   labs(title = "Total number of steps taken each day with gathered missing values", y = "daily steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](PA1_template_files/figure-html/histogram_number_steps_gathered_missing_value-1.png)<!-- -->
 
 ```r
 # Caclulating mean and value
@@ -335,6 +335,6 @@ act_data_weekendday %>%
 ## `summarise()` ungrouping output (override with `.groups` argument)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![](PA1_template_files/figure-html/plot_weekend_weekday-1.png)<!-- -->
 
 It seems, that on weekdays people are more active in the morning and on weekends, they are active during the whole day.
